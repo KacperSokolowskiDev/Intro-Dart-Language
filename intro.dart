@@ -1,29 +1,21 @@
 void main() {
-    print("Hello world!");
+  print("Hello world!");
 
-    var name = "Dart Introduction";
-    
-    var year = 2021;
-    
-    var planets = ["Earth", "Jupiter", "Saturn", "Mars", "Uranus"];
+  var name = "Dart Introduction";
+  print(name);
 
-    for(var planet in planets) {
-      print(planet);
-    }
+  var year = 2021;
 
-    while (year < 2025) {
-      year+=1;
-      print(year);
-    }
+  var planets = ["Earth", "Jupiter", "Saturn", "Mars", "Uranus"];
 
-    int fibonacci(int n) {
-      if(n == 0 || n == 1) return n;
-      return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+  for (var planet in planets) {
+    print(planet);
+  }
 
-    var result = fibonacci(20);
-    print(result);
+  while (year < 2025) {
+    year += 1;
+    print(year);
+  }
 
-    planets.where((name) => name.contains('turn')).forEach(print);
-    
+  planets.where((name) => name.contains('turn')).forEach(print);
 }
